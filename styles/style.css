@@ -33,14 +33,23 @@ main {
     border-radius: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Handlee', cursive;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.815);
+    margin-top: 3px;
 }
 
 .bloco-de-dias {
     padding: 0;
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .separar-imagem {
@@ -65,43 +74,16 @@ main {
 
 .dias {
     background-color: var(--background-color-dias);
-    width: 75px;
+    width: 100px;
     padding: 15px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.548);
     border-radius: 15px;
-    margin: 5px;
+    margin: 10px;
     align-items: center;
-    flex: 1;
     display: flex;
     flex-direction: column;
-}
 
-.dias-4 {
-    background-color: var(--background-color-dias);
-    width: 75px;
-    padding: 15px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.548);
-    border-radius: 15px;
-    margin: 5px;
-    align-items: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.dias > a {
     text-decoration: none;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: #fff;
-    font-size: 24px;
-    font-family: 'Leckerli One', cursive;
-}
-
-.dias-4 > a {
-    text-decoration: none;
-    color: black;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: #fff;
@@ -111,18 +93,7 @@ main {
 
 .dias:hover {
     cursor: pointer;
-}
-
-.dias-4:hover {
-    cursor: pointer;
-}
-
-h1 {
-    font-family: 'Handlee', cursive;
-    font-size: 50px;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.815);
-    margin-top: 3px;
+    background-color: #901814;
 }
 
 p {
@@ -132,6 +103,36 @@ p {
     font-weight: 600;
     display: flex;
     text-align: center;
+}
+
+.card-mensagens {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px 30px 15px 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagem-dia {
+    width: 250px;
+    height: 265px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mensagens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--background-color-dias);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.548);
+    border-radius: 20px;
+    padding: 15px;
+    color: #fff;
+    margin: 15px;
 }
 
 .voltar-para-inicio {
@@ -158,22 +159,6 @@ p {
     font-family: 'Leckerli One', cursive;
 }
 
-.imagem-dia {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.mensagens {
-    background-color: var(--background-color-dias);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.548);
-    border-radius: 20px;
-    padding: 15px;
-    color: #fff;
-    margin: 15px;
-}
-
 .dia-7 {
     margin-top: 250px;
 }
@@ -197,15 +182,6 @@ p {
     }
 
     .dias {
-        background-color: var(--background-color-dias);
-        width: 75px;
-        padding: 10px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.548);
-        border-radius: 15px;
-        margin: 2px;
-    }
-
-    .dias-4 {
         background-color: var(--background-color-dias);
         width: 75px;
         padding: 10px;
