@@ -34,6 +34,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 380px;
+    height: 666px;
 }
 
 h1 {
@@ -103,6 +105,8 @@ p {
     font-weight: 600;
     display: flex;
     text-align: center;
+    width: 380px;
+    height: auto;
 }
 
 .card-mensagens {
@@ -113,6 +117,22 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 666px;
+}
+
+.card-mensagem-dia-7 {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px 30px 15px 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: auto;
 }
 
 .imagem-dia {
@@ -133,23 +153,10 @@ p {
     padding: 15px;
     color: #fff;
     margin: 15px;
+    width: 380px;
+    height: auto;
 }
-
-.voltar-para-inicio {
-    background-color: var(--background-color-dias);
-    width: 50px;
-    padding: 7px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.548);
-    border-radius: 15px;
-    margin: 5px;
-    align-items: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-.voltar-para-inicio  > a {
+.voltar-para-inicio a {
     text-decoration: none;
     color: black;
     font-family: 'Poppins', sans-serif;
@@ -157,10 +164,15 @@ p {
     color: #fff;
     font-size: 14px;
     font-family: 'Leckerli One', cursive;
-}
 
-.dia-7 {
-    margin-top: 250px;
+    background-color: var(--background-color-dias);
+    padding: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.548);
+    border-radius: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .nosso-dia {
@@ -169,35 +181,171 @@ p {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 400px) {
-
+@media screen and (max-width: 450px) {
 
     .card {
         padding: 2px 15px 8px 5px;
     }
 
-    .imagem {
-        height: 50px;
-        width: 226px;
+    .dias {
+        padding: 12px;
+        width: 90px;
     }
 
-    .dias {
-        background-color: var(--background-color-dias);
-        width: 75px;
-        padding: 10px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.548);
-        border-radius: 15px;
-        margin: 2px;
+    .card-mensagens {
+        padding: 2px 15px 8px 5px;
+    }
+
+    .card-mensagem-dia-7 {
+        width: 345px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: auto;
     }
 
     h1 {
-        font-size: 35px;
-        margin-top: 3px;
+        font-size: 40px;
+    }
+
+    .imagem-dia {
+        width: 230px;
+        height: 245px;
+    }
+    .mensagens {
+        width: 320px;
     }
 
     p {
-        margin-top: 5px;
-        font-size: 16px; 
+        font-size: 14px;
+        justify-content: center;
     }
 
+}
+
+@media screen and (max-width: 410px){
+    .card {
+        width: 345px;
+        margin: 10px;
+        height: auto;
+    }
+
+    .dias {
+        margin-left: 7px;
+        padding: 10px;
+    }
+
+    .card-mensagens {
+        width: 345px;
+        height: auto;
+    }
+    
+    .card-mensagem-dia-7 {
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .mensagens {
+        width: 300px;
+    }
+
+    p {
+        width: 345px;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .card {
+        width: 320px;
+        margin: 10px;
+        height: auto;
+        padding: 5px;
+    }
+
+    .dias {
+        padding: 8px;
+        width: 75px;
+    }
+
+    .card-mensagens {
+        width: 320px;
+        height: auto;
+        padding: 5px;
+    }
+    
+    .card-mensagem-dia-7 {
+        width: 320px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: auto;
+        padding: 5px;
+    }
+
+    .imagem-dia {
+        width: 210px;
+        height: 225px;
+    }
+
+    h1 {
+        font-size: 37px;
+    }
+
+    .mensagens {
+        width: 290px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: auto;
+        padding: 8px;
+    }
+
+    p {
+        width: 320px;
+        font-size: 12px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        width: 300px;
+    }
+
+    .dias {
+        padding: 7.5px;
+        width: 70px;
+    }
+
+    .card-mensagens {
+        width: 300px;
+    }
+
+    .card-mensagem-dia-7 {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .mensagens {
+        width: 270px;
+        margin-top: 13px;
+    }
+
+    p {
+        width: 300px;
+        font-size: 11px;
+    }
+
+    .voltar-para-inicio a {
+        padding: 6px;
+    }
 }
